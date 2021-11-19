@@ -1,5 +1,8 @@
 Project plan
-DATA: Name, Type, Producer, Price, Amount    (Image is added through active admin)
+DATA:Name,Type,Producer,Price,Amount,Description, Quantity   (Image is added through active admin)
+
+
+
 
 Tool     rails g model Tool name:string description:text price:decimal quantity:integer producer_company:references
 id, name, description, price, quantity, producer_id,
@@ -12,6 +15,9 @@ Toold_id, producer_id
 
 Type  (Many to Many with tools)
 Id, name (eg concrete, wood, exetra..)
+
+
+
 
 
 purchase
