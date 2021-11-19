@@ -1,10 +1,10 @@
 Project plan
-DATA: Name, Image, Type, Producer, Price, Amount
+DATA: Name, Type, Producer, Price, Amount    (Image is added through active admin)
 
-Tools
-id, name, description, price, quantity, , image , producer_id, amount
+Tool     rails g model Tool name:string description:text price:decimal quantity:integer producer_company:references
+id, name, description, price, quantity, producer_id,
 
-Producer (1 to many)
+Producer (1 to many)         rails g model Producer name:string
 Id, name
 
 Tool_type (joiner)
